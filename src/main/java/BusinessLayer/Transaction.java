@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Bank.BusinessLayer;
+package BusinessLayer;
 
 import java.util.Date;
 
@@ -11,14 +11,14 @@ import java.util.Date;
  *
  * @author johnk
  */
-public class Transcation {
+public class Transaction {
     private int transactionNumber;
     private Date date;
     private double amount;
     private String description;
     private int accountNumber;
 
-    public Transcation(int transactionNumber, Date date, double amount, String description, int accountNumber) {
+    public Transaction(int transactionNumber, Date date, double amount, String description, int accountNumber) {
         this.transactionNumber = transactionNumber;
         this.date = date;
         this.amount = amount;
