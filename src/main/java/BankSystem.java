@@ -6,6 +6,7 @@ import BusinessLayer.User;
 import DataAccess.BankAccountDataManager;
 import DataAccess.TransactionDataManager;
 import DataAccess.UserDataManager;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -21,14 +22,14 @@ import java.util.Date;
  */
 public class BankSystem {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         
         BankAccountDataManager bankAccountDm = new BankAccountDataManager();
         TransactionDataManager transDm = new TransactionDataManager();
         UserDataManager userDm = new UserDataManager();
         
         
-        User myUser = new User(1, "John", "Kuefler", "jkuefler@pittstate.edu", "password1");
+        User myUser = new User(1, "Bob", "Smith", "bsmith@pittstate.edu", "password99");
         
         BankAccount myAcount = new BankAccount(101, "My Checking", 100, BankAccountType.CHECKING, 1);
         
